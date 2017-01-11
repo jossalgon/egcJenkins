@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.5.1" timestamp="2017-01-12T00:05:01.907">
+<file name="/home/jossalgon/Documentos/workspace/proy1/src/main/java/es/egc/app/App.java">
+<violation beginline="9" endline="20" begincolumn="1" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="es.egc.app" class="App" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="16" endline="19" begincolumn="12" endcolumn="5" rule="CommentDefaultAccessModifier" ruleset="Comments" package="es.egc.app" class="App" method="getVal" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/comments.html#CommentDefaultAccessModifier" priority="3">
+To avoid mistakes add a comment at the beginning of the getVal method if you want a default access modifier
+</violation>
+</file>
+</pmd>

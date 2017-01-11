@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.5.1" timestamp="2017-01-12T00:05:02.634">
+<file name="/home/jossalgon/Documentos/workspace/proy1/src/test/java/es/egc/app/AppTest.java">
+<violation beginline="36" endline="36" begincolumn="9" endcolumn="35" rule="UseAssertSameInsteadOfAssertTrue" ruleset="JUnit" package="es.egc.app" class="AppTest" method="testApp" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/junit.html#UseAssertSameInsteadOfAssertTrue" priority="3">
+Use assertSame(x, y) instead of assertTrue(x==y), or assertNotSame(x,y) vs assertFalse(x==y)
+</violation>
+</file>
+</pmd>

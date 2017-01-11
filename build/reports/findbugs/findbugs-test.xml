@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1484175897002" analysisTimestamp="1484175897044" release="">
+  <Project projectName="">
+    <Jar>/home/jossalgon/Documentos/workspace/proy1/build/classes/test/es/egc/app/AppTest.class</Jar>
+    <AuxClasspathEntry>/home/jossalgon/Documentos/workspace/proy1/build/classes/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/Documentos/workspace/proy1/build/resources/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/3.0.1/fc019a2216218990d64dfe756e7aa20f0069dea2/annotations-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <SrcDir>/home/jossalgon/Documentos/workspace/proy1/src/test/java/es/egc/app/AppTest.java</SrcDir>
+    <Plugin id="com.mebigfatguy.fbcontrib" enabled="true"/>
+    <Plugin id="jp.co.worksap.oss.findbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="UNKNOWN_NULLNESS_OF_RETURNED_VALUE" priority="2" rank="2" abbrev="JSR305" category="BAD_PRACTICE" instanceHash="aea60b08193c7ffa0a8a085f635add4f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nullness of this returned value is unknown.
+    </ShortMessage>
+    <LongMessage>
+      Nullness of returned value in method suite of class es.egc.app.AppTest is unknown.
+    </LongMessage>
+    <Class classname="es.egc.app.AppTest" primary="true">
+      <SourceLine classname="es.egc.app.AppTest" start="20" end="37" sourcefile="AppTest.java" sourcepath="es/egc/app/AppTest.java">
+        <Message>At AppTest.java:[lines 20-37]</Message>
+      </SourceLine>
+      <Message>In class es.egc.app.AppTest</Message>
+    </Class>
+    <Method classname="es.egc.app.AppTest" name="suite" signature="()Ljunit/framework/Test;" isStatic="true" primary="true">
+      <SourceLine classname="es.egc.app.AppTest" start="28" end="28" startBytecode="0" endBytecode="33" sourcefile="AppTest.java" sourcepath="es/egc/app/AppTest.java"/>
+      <Message>In method es.egc.app.AppTest.suite()</Message>
+    </Method>
+    <SourceLine classname="es.egc.app.AppTest" start="28" end="28" startBytecode="0" endBytecode="33" sourcefile="AppTest.java" sourcepath="es/egc/app/AppTest.java" synthetic="true">
+      <Message>At AppTest.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="UNKNOWN_NULLNESS_OF_RETURNED_VALUE" abbrev="JSR305" category="BAD_PRACTICE">
+    <ShortDescription>Nullness of this returned value is unknown.
+    </ShortDescription>
+    <Details><![CDATA[
+  
+    <p>Nullness of this returned value is unknown.</p>
+  
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JSR305">
+    <Description>JSR305</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 12 Jan 2017 00:04:57 +0100" total_classes="1" referenced_classes="33" total_bugs="1" total_size="9" num_packages="1" java_version="1.8.0_111" vm_version="25.111-b14" cpu_seconds="9.34" clock_seconds="2.94" peak_mbytes="158.33" alloc_mbytes="1758.50" gc_seconds="0.25" priority_2="1">
+    <FileStats path="es/egc/app/AppTest.java" bugCount="1" size="9" bugHash="68bd71ce4def368d14deaeeb74dca4fd"/>
+    <PackageStats package="es.egc.app" total_bugs="1" total_types="1" total_size="9" priority_2="1">
+      <ClassStats class="es.egc.app.AppTest" sourceFile="AppTest.java" interface="false" size="9" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="408" invocations="349" avgMicrosecondsPerInvocation="1171" maxMicrosecondsPerInvocation="37774" standardDeviationMircosecondsPerInvocation="3226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="221" invocations="1" avgMicrosecondsPerInvocation="221784" maxMicrosecondsPerInvocation="221784" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="129" invocations="33" avgMicrosecondsPerInvocation="3938" maxMicrosecondsPerInvocation="29594" standardDeviationMircosecondsPerInvocation="5926"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="109" invocations="33" avgMicrosecondsPerInvocation="3327" maxMicrosecondsPerInvocation="27610" standardDeviationMircosecondsPerInvocation="5674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="92" invocations="363" avgMicrosecondsPerInvocation="255" maxMicrosecondsPerInvocation="1644" standardDeviationMircosecondsPerInvocation="149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="107" avgMicrosecondsPerInvocation="826" maxMicrosecondsPerInvocation="28672" standardDeviationMircosecondsPerInvocation="2857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="75" invocations="33" avgMicrosecondsPerInvocation="2274" maxMicrosecondsPerInvocation="13555" standardDeviationMircosecondsPerInvocation="3089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="69" invocations="317" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="4900" standardDeviationMircosecondsPerInvocation="448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="67" invocations="3" avgMicrosecondsPerInvocation="22384" maxMicrosecondsPerInvocation="64975" standardDeviationMircosecondsPerInvocation="30116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="67" invocations="78" avgMicrosecondsPerInvocation="860" maxMicrosecondsPerInvocation="7451" standardDeviationMircosecondsPerInvocation="1130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="53" invocations="33" avgMicrosecondsPerInvocation="1625" maxMicrosecondsPerInvocation="17613" standardDeviationMircosecondsPerInvocation="3183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="33" avgMicrosecondsPerInvocation="1223" maxMicrosecondsPerInvocation="15573" standardDeviationMircosecondsPerInvocation="2726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="39" invocations="33" avgMicrosecondsPerInvocation="1196" maxMicrosecondsPerInvocation="9012" standardDeviationMircosecondsPerInvocation="2007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="39" invocations="33" avgMicrosecondsPerInvocation="1194" maxMicrosecondsPerInvocation="9473" standardDeviationMircosecondsPerInvocation="2193"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1484175891434" analysisTimestamp="1484175891653" release="">
+  <Project projectName="">
+    <Jar>/home/jossalgon/Documentos/workspace/proy1/build/classes/main/es/egc/app/App.class</Jar>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/jossalgon/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/3.0.1/fc019a2216218990d64dfe756e7aa20f0069dea2/annotations-3.0.1.jar</AuxClasspathEntry>
+    <SrcDir>/home/jossalgon/Documentos/workspace/proy1/src/main/java/es/egc/app/App.java</SrcDir>
+    <Plugin id="com.mebigfatguy.fbcontrib" enabled="true"/>
+    <Plugin id="jp.co.worksap.oss.findbugs" enabled="true"/>
+  </Project>
+  <BugInstance type="FORBIDDEN_SYSTEM" priority="2" rank="2" abbrev="SYS" category="BAD_PRACTICE" instanceHash="f8ab9034d53061340455418326194a39" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>code for publish can not use System.out
+    </ShortMessage>
+    <LongMessage>we can not use System.out and System.err, please use log to
+      output information
+    </LongMessage>
+    <Class classname="es.egc.app.App" primary="true">
+      <SourceLine classname="es.egc.app.App" start="8" end="18" sourcefile="App.java" sourcepath="es/egc/app/App.java">
+        <Message>At App.java:[lines 8-18]</Message>
+      </SourceLine>
+      <Message>In class es.egc.app.App</Message>
+    </Class>
+    <Method classname="es.egc.app.App" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="es.egc.app.App" start="14" end="15" startBytecode="0" endBytecode="54" sourcefile="App.java" sourcepath="es/egc/app/App.java"/>
+      <Message>In method es.egc.app.App.main(String[])</Message>
+    </Method>
+    <SourceLine classname="es.egc.app.App" primary="true" start="14" end="14" startBytecode="0" endBytecode="0" sourcefile="App.java" sourcepath="es/egc/app/App.java">
+      <Message>At App.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UNKNOWN_NULLNESS_OF_PARAMETER" priority="2" rank="2" abbrev="JSR305" category="BAD_PRACTICE" instanceHash="d41a1c90bf5904d11262043a2ffe4fcf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nullness of this parameter is unknown.
+    </ShortMessage>
+    <LongMessage>Nullness of parameter in method main of class es.egc.app.App is unknown.
+    </LongMessage>
+    <Class classname="es.egc.app.App" primary="true">
+      <SourceLine classname="es.egc.app.App" start="8" end="18" sourcefile="App.java" sourcepath="es/egc/app/App.java">
+        <Message>At App.java:[lines 8-18]</Message>
+      </SourceLine>
+      <Message>In class es.egc.app.App</Message>
+    </Class>
+    <Method classname="es.egc.app.App" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="es.egc.app.App" start="14" end="15" startBytecode="0" endBytecode="54" sourcefile="App.java" sourcepath="es/egc/app/App.java"/>
+      <Message>In method es.egc.app.App.main(String[])</Message>
+    </Method>
+    <SourceLine classname="es.egc.app.App" start="14" end="15" startBytecode="0" endBytecode="54" sourcefile="App.java" sourcepath="es/egc/app/App.java" synthetic="true">
+      <Message>At App.java:[lines 14-15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="FORBIDDEN_SYSTEM" abbrev="SYS" category="BAD_PRACTICE">
+    <ShortDescription>code for publish can not use System.out
+    </ShortDescription>
+    <Details><![CDATA[
+  
+    <p>System.out and System.err are forbidden, please use log</p>
+  
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UNKNOWN_NULLNESS_OF_PARAMETER" abbrev="JSR305" category="BAD_PRACTICE">
+    <ShortDescription>Nullness of this parameter is unknown.
+    </ShortDescription>
+    <Details><![CDATA[
+  
+    <p>Nullness of this parameter is unknown.</p>
+  
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JSR305">
+    <Description>JSR305</Description>
+  </BugCode>
+  <BugCode abbrev="SYS">
+    <Description>SYS</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 12 Jan 2017 00:04:51 +0100" total_classes="1" referenced_classes="12" total_bugs="2" total_size="8" num_packages="1" java_version="1.8.0_111" vm_version="25.111-b14" cpu_seconds="7.76" clock_seconds="2.45" peak_mbytes="143.46" alloc_mbytes="1758.50" gc_seconds="0.19" priority_2="2">
+    <FileStats path="es/egc/app/App.java" bugCount="2" size="8" bugHash="3990bc564f02493fbcad0d43c0d64a8a"/>
+    <PackageStats package="es.egc.app" total_bugs="2" total_types="1" total_size="8" priority_2="2">
+      <ClassStats class="es.egc.app.App" sourceFile="App.java" interface="false" size="8" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="380" invocations="328" avgMicrosecondsPerInvocation="1159" maxMicrosecondsPerInvocation="29462" standardDeviationMircosecondsPerInvocation="2569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="167" invocations="1" avgMicrosecondsPerInvocation="167089" maxMicrosecondsPerInvocation="167089" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="112" invocations="296" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="41106" standardDeviationMircosecondsPerInvocation="2406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="84" invocations="12" avgMicrosecondsPerInvocation="7071" maxMicrosecondsPerInvocation="29855" standardDeviationMircosecondsPerInvocation="8995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="93" avgMicrosecondsPerInvocation="869" maxMicrosecondsPerInvocation="33119" standardDeviationMircosecondsPerInvocation="3482"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="71" invocations="12" avgMicrosecondsPerInvocation="5970" maxMicrosecondsPerInvocation="27664" standardDeviationMircosecondsPerInvocation="8049"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="69" invocations="3" avgMicrosecondsPerInvocation="23284" maxMicrosecondsPerInvocation="68607" standardDeviationMircosecondsPerInvocation="32051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="68" invocations="61" avgMicrosecondsPerInvocation="1121" maxMicrosecondsPerInvocation="8885" standardDeviationMircosecondsPerInvocation="1484"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="60" invocations="344" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="11771" standardDeviationMircosecondsPerInvocation="1000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="44" invocations="12" avgMicrosecondsPerInvocation="3703" maxMicrosecondsPerInvocation="16712" standardDeviationMircosecondsPerInvocation="4569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="12" avgMicrosecondsPerInvocation="3026" maxMicrosecondsPerInvocation="16075" standardDeviationMircosecondsPerInvocation="4371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="34" invocations="3" avgMicrosecondsPerInvocation="11539" maxMicrosecondsPerInvocation="33575" standardDeviationMircosecondsPerInvocation="15583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="33" invocations="12" avgMicrosecondsPerInvocation="2807" maxMicrosecondsPerInvocation="20867" standardDeviationMircosecondsPerInvocation="5606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="31" invocations="12" avgMicrosecondsPerInvocation="2652" maxMicrosecondsPerInvocation="11271" standardDeviationMircosecondsPerInvocation="3606"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
